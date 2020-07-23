@@ -1,0 +1,32 @@
+    let srcPic = document.getElementById('accPicDiv').firstElementChild.cloneNode(true);
+    let username = document.getElementById('usernaame').cloneNode(true);
+    let grayusername = document.getElementById('grayusername');
+
+
+    let accPicClone = document.getElementById('usernamepostpic').appendChild(srcPic);
+    let usernameClone = document.getElementById('usernameclone').appendChild(username);
+    let grayusernameClone = document.getElementById('grayusernameclone').appendChild(grayusername);
+
+
+
+
+
+   function retweet(){
+    
+        let thePost = document.getElementById('hoverpost').cloneNode(true);
+        let contains = document.getElementById('retweetcontainer');
+        
+        contains.insertBefore(thePost, contains.firstElementChild)
+       
+      
+       
+    }
+
+
+        var postinput = document.getElementById('postInput').value;
+    
+    
+
+    let theText = document.getElementById('thetxet').innerHTML = postinput;    
+    
+    var postinput = document.getElementById('postInput').value = "";

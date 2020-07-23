@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8" />
+
+	<title>twitter</title>
+	<link
+		href="https://fonts.googleapis.com/css2?famliy=Open+Sans:wght@300&display=swap"
+		rel="stylesheet"
+	/>
+	<link rel="stylesheet" href="style.css" />
+
+	<script
+		src="https://kit.fontawesome.com/48c0480a1e.js"
+		crossorigin="anonymous"
+	></script>
+</head>
+
+<body>
+	<main>
+		<div class="leftDiv">
+			<div id="fixedP">
+				<div class="Logo">
+					<a href="#" id="Logo"><i class="fab fa-twitter fa-2x"></i></a>
+				</div>
+				<div class="mainList">
+					<ul class="nav nav-tabs">
+						<li>
+							<a href="#"><i class="fas fa-house-user"></i>Home</a>
+						</li>
+						<li>
+							<a href="#"><i class="fas fa-bomb"></i>Explor</a>
+						</li>
+						<li>
+							<a href="#"><i class="fas fa-bell"></i>Notifications</a>
+						</li>
+						<li>
+							<a href="#"><i class="fas fa-envelope"></i>Messages</a>
+						</li>
+						<li>
+							<a href="#"><i class="fas fa-list"></i>List</a>
+						</li>
+						<li>
+							<a href="#"><i class="fas fa-user-circle"></i>Proflie</a>
+						</li>
+						<li>
+							<a href="#"><i class="fas fa-info-circle"></i>More</a>
+						</li>
+						<a id="buttom" href="#">Tweet</a>
+					</ul>
+				</div>
+
+				<div>
+					<a id="divaccpic2" href="#">
+						<img
+							id="accPic2"
+							src="./pictures/HWQME6685.jpeg"
+							alt="personal accpic" />
+						<div id="textaccinfodiv">
+							<h4 id="usernaame">Khaleel Moeen</h4>
+							<h4 id="grayusername">@KhaleelMoeen</h4>
+						</div>
+						<i id="theup" class="fas fa-angle-up"></i
+					></a>
+				</div>
+			</div>
+		</div>
+		<!-- here the center div, here we put our contont like post 
+	  		or somthing like that -->
+		<div id="centerDiv">
+			<div id="heder">
+				<div class="homeText">
+					<a id="texthomelink" href="#"><h2>Home</h2></a>
+				</div>
+
+				<div id="singOutPostion">
+					<a id="singOut" href="#"><i class="fas fa-sign-out-alt"></i></a>
+				</div>
+			</div>
+
+			<div class="writePost">
+				<div id="accPicDiv">
+					<a href="#"><img id="accPic" src="./pictures/HWQME6685.jpeg" /></a>
+				</div>
+				<div>
+					<textarea
+						id="postInput"
+						minlength="1"
+						maxlength="900"
+						placeholder="What's happening?"
+					></textarea>
+					<div id="writePostDownPanl">
+						<div id="writePostIcon">
+							<a href="#"><i class="fas fa-play-circle"></i></a>
+							<a href="#"
+								><input id="fileinput" type="file" />
+								<label for="fileinput"><i class="fas fa-image"></i></label
+							></a>
+							<a href="#"><i class="fas fa-meh-blank"></i></a>
+							<a href="#"><i class="fab fa-staylinked"></i></a>
+						</div>
+						<div class="buttom2">
+							<div id="plusIcone"><i class="fas fa-plus"></i></div>
+							<div></div>
+							<div id="varticalline"></div>
+
+							<div><button id="botton2">Tweet</button></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- here the tweet or the lastfees 
+			<div class="container">
+				<div id="usernamepostpic"></div>
+				<div class="textusernaame">
+					<div id="usernameclone"></div>
+					<div id="grayusernameclone"></div>
+					<h3 id="thetxet"></h3>
+				</div>
+			</div>
+			-->
+			<div id="retweetcontainer" class="retweetcontainer"></div>
+			<div id="postscontainer"></div>
+			<div id="hoverpost" class="hoverpost">
+				<div class="postcontainer">
+					<div class="accountpicture">
+						<img
+							id="accPic2"
+							src="./pictures/HWQME6685.jpeg"
+							alt="personal accpic"
+						/>
+					</div>
+					<div class="postrightcontnt">
+						<div class="usernsmeditals">
+							<div class="name"><h4 id="usernaame">Khaleel Moeen</h4></div>
+							<div class="username">
+								<h4 id="grayusername">@KhaleelMoeen</h4>
+							</div>
+							<time class="date" datetime="2020-07-18T10:23:58.000Z"></time>
+							<div class="downicon"><i class="fas fa-angle-down"></i></div>
+						</div>
+
+						<div class="textpost">
+							<h4 id="thetxet"></h4>
+						</div>
+
+						<div class="iconsofpost">
+							<a href="#" class="comment"><i class="far fa-comment"></i></a>
+							<a href="#" onclick="retweetFun()" class="retweet"
+								><i id="retweet" class="fas fa-retweet"></i
+							></a>
+							<a href="#" onclick="like()" id="likeid" class="like"
+								><i class="far fa-heart"></i
+							></a>
+							<a href="#" class="anylize"><i class="fas fa-chart-line"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="rightContent">
+			<div id="box1">
+				<input placeholder="Search Twitter" type="text" />
+				<i class="fas fa-search"></i>
+			</div>
+
+			<div class="box2">
+				<div class="firstrow">
+					<h3>Trends for you</h3>
+					<a id="stingsicon" href="#"><i class="fas fa-cogs"></i></a>
+				</div>
+				<div href="#" id="divborder"><a href="#">#gaza</a></div>
+				<div id="divborder"><a href="#">GSG</a></div>
+
+				<div class="stikeytrends" id="divborder">
+					<a href="#">#palestine</a>
+				</div>
+				<div id="none"><a id="showmore" href="#">Show more</a></div>
+			</div>
+
+			<div id="box3">
+				<div><h3>Who to follow</h3></div>
+
+				<div class="b3">
+					<a id="divaccpic3" href="#">
+						<img id="accPic3" src="./pictures/marh.jpg" alt="personal accpic" />
+						<div id="text3">
+							<h4 id="usernaame3">Marahnshwan</h4>
+							<h4 id="grayusername3">@NshwanMarah</h4>
+						</div>
+						<button id="followBotton">Follow</button></a
+					>
+				</div>
+
+				<div class="b3">
+					<a id="divaccpic3" href="#">
+						<img
+							id="accPic3"
+							src="./pictures/EZMNAqmUcAAPBU0.jpeg"
+							alt="personal accpic"
+						/>
+						<div id="text3">
+							<h4 id="usernaame3">nʑнa</h4>
+							<h4 id="grayusername3">@nzha_t</h4>
+						</div>
+						<button id="followBotton">Follow</button></a
+					>
+				</div>
+
+				<div class="b3">
+					<a id="divaccpic3" href="#">
+						<img
+							id="accPic3"
+							src="./pictures/zaina.jpg"
+							alt="personal accpic"
+						/>
+						<div id="text3">
+							<h4 id="usernaame3">Zaenah</h4>
+							<h4 id="grayusername3">@zaenah_shaath</h4>
+						</div>
+						<button id="followBotton">Follow</button></a
+					>
+				</div>
+
+				<div id="none"><a id="showmore" href="#">Show more</a></div>
+			</div>
+			<div class="posces">
+				<a href="#">Terms</a>
+				<a href="#">Privacy policy</a>
+				<a href="#">Cookies</a>
+				<a href="#">Ads info</a>
+				<a href="#">More</a>
+				<h5>© 2020 Twitter, Inc.</h5>
+			</div>
+		</div>
+	</main>
+</body>
+<script src="js.js"></script>
