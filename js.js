@@ -43,7 +43,17 @@ for (var i = g.children.length-1; i > 0; i--)
  
 
 
+ var postcontiner = [document.getElementById('postscontainer').children];
+    let c = [];
+        for (let element of postcontiner){
+            
+       
+      
+      
+    console.log(element)
 
+           
+        }
 
 
 
