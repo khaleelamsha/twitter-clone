@@ -10,7 +10,9 @@ let tweetButton = document.getElementById("botton2").onclick = function(){
     contain.insertBefore(thePost.cloneNode(true), contain.firstElementChild)
     var postinput = document.getElementById('postInput').value;
     let theText = document.getElementById('thetxet').innerHTML = postinput;    
-    var postinput = document.getElementById('postInput').value = "";
+    var claer = document.getElementById('postInput').value = "";
+    
+    localStorage.setItem("postinput", postinput);
 };
 
 function retweetFun(){
