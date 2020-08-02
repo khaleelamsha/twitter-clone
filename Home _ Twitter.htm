@@ -118,7 +118,7 @@
 				</div>
 			</div>
 			-->
-			<div id="retweetcontainer" class="retweetcontainer"></div>
+
 			<div id="postscontainer"></div>
 			<div id="hoverpost" class="hoverpost">
 				<div class="postcontainer">
@@ -145,10 +145,14 @@
 
 						<div class="iconsofpost">
 							<a href="#" class="comment"><i class="far fa-comment"></i></a>
-							<a href="#" onclick="retweetFun()" class="retweet"
-								><i id="retweet" class="fas fa-retweet"></i
+							<a
+								href="#"
+								onclick="retweetFunction(event)"
+								id="retweet"
+								class="retweet"
+								><i class="fas fa-retweet"></i
 							></a>
-							<a href="#" onclick="like()" id="likeid" class="like"
+							<a href="#" onclick="like(event)" id="likeid" class="like"
 								><i class="far fa-heart"></i
 							></a>
 							<a href="#" class="anylize"><i class="fas fa-chart-line"></i></a>
