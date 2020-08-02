@@ -15,32 +15,20 @@ let tweetButton = document.getElementById("botton2").onclick = function(){
     localStorage.setItem("postinput", postinput);
 };
 
-function retweetFun(){
-     let g = document.getElementById('postscontainer');
-for (var i = g.children.length-1; i > 0; i--)
-{
+function retweetFunction(event){
+    
+    event.target.style = "color:green";
 
-    (function(index){
-        g.children[i].onclick = function(){
-     
-     let thePost = document.getElementById('hoverpost').cloneNode(true);
-        let contains = document.getElementById('retweetcontainer');
-        
-        contains.insertBefore(thePost, contains.firstElementChild)
-     
-        }    
-    })(i);
-
-}
+    
 
 }
 
 
 
     
-    function like(){
-        document.getElementById('likeid').style = "color:red"
-    }
+        function like(event){
+            event.target.style = "color:red"
+        }
     
  
 
