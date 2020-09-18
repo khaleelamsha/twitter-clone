@@ -1,4 +1,4 @@
-# twitter-clone
+#  twitter clone
 this project for GSG
 
 This project is the first project since I learned programming,
